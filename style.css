@@ -1,0 +1,38 @@
+.header{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: Times;
+    height: 200px;
+    padding:5px;
+
+}
+
+form{
+    margin-bottom: 30px;
+}
+
+
+
+.panel-default > .panel-heading-custom {
+    color: white;
+    background: #2295b5 ; 
+    font-family: Times;
+    border-color: 2295b5;
+}
+
+.logo {
+    float: left;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.glyphicon {
+    margin-right: 10px;
+}
+.btn
+{
+    color: white;
+    background: #2295b5 ;
+    
+}

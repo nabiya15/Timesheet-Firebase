@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Data Management</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<!--Header Section-->
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="jumbotron header">
+					<h2>Employee Data Management</h2>
+					<h4>A Comprehensive Directory of Employee Billable Hours</h4>
+				</div>
+			</div>
+		</div>
+
+		<!--API Section-->
+		<div class="row">
+		<div class="col-md-2"></div>
+			<div class="col-md-8" id="displayCol">
+				 <div class="panel panel-default">
+					<div class="panel-heading panel-heading-custom">
+						<h3 class="panel-title">Current Employees</h3>
+					</div>
+					<div class="panel-body" id="articleList">
+
+						<table class="table">
+						  <thead>
+						    <tr>
+						      <th>Employee Name</th>
+						      <th>Role</th>
+						      <th>Start Date</th>
+									<th>Months Worked</th>
+									<th>Monthly Rate ($)</th>
+									<th>Total Billed ($)</th>
+						    </tr>
+						  </thead>
+						  <tbody id="tableBody">
+						  </tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--API Section-->
+		<div class="row">
+		<div class="col-md-2"></div>
+			<div class="col-md-8" id="displayCol">
+				 <div class="panel panel-default">
+					<div class="panel-heading panel-heading-custom">
+						<h3 class="panel-title">Add Employee</h3>
+					</div>
+					<div class="panel-body" id="articleList">
+
+						<!--Form Section-->
+						<div class="row">
+							<div class="col-md-12">
+								<form>
+									<div class="form-group">
+										<label for="employee-name">Employee Name</label>
+										<input type="text" class="form-control" id="employee-name">
+									</div>
+
+									<div class="form-group">
+										<label for="role">Role</label><input type="text" value"" class="form-control" id="role">
+									</div>
+
+									<div class="form-group">
+										<label for="start">Start Date (DD/MM/YY - ex: 01/01/89)</label>
+										<input type="date" class="form-control" id="start">
+									</div>
+
+									<div class="form-group">
+										<label for="rate">Monthly Rate</label>
+										<input type="text" class="form-control" id="rate">
+									</div>
+
+									<button class="btn btn-primary" id="search">Submit</button>
+								</form>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="app.js" type="text/javascript" async="true">
+		</script>
+	</body>
+	</html>
